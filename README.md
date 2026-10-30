@@ -37,7 +37,9 @@ The archived expression workbook contains count and TPM sheets for three B73 and
 
 The archived count sheet contains fractional entries. The differential expression script stops on these values by default; `--historical-ceiling` explicitly repeats the archived upward rounding only after count provenance has been checked. The newly organized R scripts have **not** been run end-to-end in an R environment. The original standalone screening script was not found; the annotation-only screen is a new, narrower reconstruction.
 
-See the [transcriptomics README](transcriptomics/README.md) for input requirements, commands, and interpretation.
+### Running the transcriptomics scripts
+
+Install R packages `readxl`, `writexl`, `DESeq2`, and `clusterProfiler`, plus Python packages `pandas` and `openpyxl`. Run the scripts from the `transcriptomics/` directory; review count provenance before opting into historical rounding. See the [transcriptomics README](transcriptomics/README.md) for commands and interpretation.
 
 ## Metabolomics workflow
 
@@ -48,13 +50,9 @@ See the [transcriptomics README](transcriptomics/README.md) for input requiremen
 
 The [29 archived R objects](metabolomics/archived_objects/) preserve the two original project directories and positive/negative processing stages. The [MetMiner source modules](metabolomics/reference/MetMiner/) are an attributed reference snapshot, not a standalone installation or proof of the exact version originally used.
 
-See the [metabolomics README](metabolomics/README.md) and [workflow guide](metabolomics/WORKFLOW.md) for recorded parameters, input details and the MetMiner operation guide.
+### Running the metabolomics analysis
 
-## Running the available scripts
-
-For transcriptomics, install R packages `readxl`, `writexl`, `DESeq2`, and `clusterProfiler`, plus Python packages `pandas` and `openpyxl`. Run the scripts from the `transcriptomics/` directory as described in its README; the count provenance must be reviewed before opting into historical rounding.
-
-For the metabolomics candidate extraction:
+For the candidate feature extraction, run:
 
 ```bash
 cd metabolomics
@@ -63,6 +61,8 @@ python scripts/01_extract_phenylpropanoids.py
 ```
 
 Use the complete upstream [MetMiner](https://github.com/ShawnWx2019/MetMiner) application and its [cookbook](https://shawnwx2019.github.io/metminer-cookbook/) for interactive preprocessing and annotation. The copied reference modules do not independently reproduce the historical run.
+
+See the [metabolomics README](metabolomics/README.md) and [workflow guide](metabolomics/WORKFLOW.md) for recorded parameters, input details and the MetMiner operation guide.
 
 ## Reproducibility and provenance
 
