@@ -37,9 +37,7 @@ The archived expression workbook contains count and TPM sheets for three B73 and
 
 The archived count sheet contains fractional entries. The differential expression script stops on these values by default; `--historical-ceiling` explicitly repeats the archived upward rounding only after count provenance has been checked. The newly organized R scripts have **not** been run end-to-end in an R environment. The original standalone screening script was not found; the annotation-only screen is a new, narrower reconstruction.
 
-### Running the transcriptomics scripts
-
-Install R packages `readxl`, `writexl`, `DESeq2`, and `clusterProfiler`, plus Python packages `pandas` and `openpyxl`. Run the scripts from the `transcriptomics/` directory; review count provenance before opting into historical rounding. See the [transcriptomics README](transcriptomics/README.md) for commands and interpretation.
+See the [transcriptomics README](transcriptomics/README.md) for setup and running instructions.
 
 ## Metabolomics workflow
 
@@ -50,19 +48,7 @@ Install R packages `readxl`, `writexl`, `DESeq2`, and `clusterProfiler`, plus Py
 
 The [29 archived R objects](metabolomics/archived_objects/) preserve the two original project directories and positive/negative processing stages. The [MetMiner source modules](metabolomics/reference/MetMiner/) are an attributed reference snapshot, not a standalone installation or proof of the exact version originally used.
 
-### Running the metabolomics analysis
-
-For the candidate feature extraction, run:
-
-```bash
-cd metabolomics
-python -m pip install -r requirements.txt
-python scripts/01_extract_phenylpropanoids.py
-```
-
-Use the complete upstream [MetMiner](https://github.com/ShawnWx2019/MetMiner) application and its [cookbook](https://shawnwx2019.github.io/metminer-cookbook/) for interactive preprocessing and annotation. The copied reference modules do not independently reproduce the historical run.
-
-See the [metabolomics README](metabolomics/README.md) and [workflow guide](metabolomics/WORKFLOW.md) for recorded parameters, input details and the MetMiner operation guide.
+See the [metabolomics README](metabolomics/README.md) for setup and running instructions, and the [workflow guide](metabolomics/WORKFLOW.md) for processing details.
 
 ## Reproducibility and provenance
 
