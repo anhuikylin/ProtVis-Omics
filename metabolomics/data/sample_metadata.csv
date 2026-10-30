@@ -1,0 +1,63 @@
+sample_id,injection.order,class,group,batch,species,tissue,stage
+QC_01,1,QC,QC,1,QC,QC,QC
+QC_02,2,QC,QC,1,QC,QC,QC
+QC_03,3,QC,QC,1,QC,QC,QC
+QC_04,4,QC,QC,1,QC,QC,QC
+QC_05,5,QC,QC,1,QC,QC,QC
+QC_06,6,QC,QC,1,QC,QC,QC
+S_0001,7,Subject,b73_VE_leaf.1,1,Zea mays ssp.mays,leaf,VE
+S_0002,8,Subject,b73_VE_leaf.2,1,Zea mays ssp.mays,leaf,VE
+S_0003,9,Subject,b73_VE_leaf.3,1,Zea mays ssp.mays,leaf,VE
+S_0004,10,Subject,b73_VEroot.1,1,Zea mays ssp.mays,root,VE
+S_0005,11,Subject,b73_VEroot.2,1,Zea mays ssp.mays,root,VE
+S_0006,12,Subject,b73_VEroot.3,1,Zea mays ssp.mays,root,VE
+S_0007,13,Subject,b73_V1_leaf.1,1,Zea mays ssp.mays,leaf,V1
+S_0008,14,Subject,b73_V1_leaf.2,1,Zea mays ssp.mays,leaf,V1
+S_0009,15,Subject,b73_V1_leaf.3,1,Zea mays ssp.mays,leaf,V1
+S_0010,16,Subject,b73_V1root.1,1,Zea mays ssp.mays,root,V1
+QC_07,17,QC,QC,1,QC,QC,QC
+S_0011,18,Subject,b73_V1root.2,1,Zea mays ssp.mays,root,V1
+S_0012,19,Subject,b73_V1root.3,1,Zea mays ssp.mays,root,V1
+S_0013,20,Subject,b73_V2_leaf.1,1,Zea mays ssp.mays,leaf,V2
+S_0014,21,Subject,b73_V2_leaf.2,1,Zea mays ssp.mays,leaf,V2
+S_0015,22,Subject,b73_V2_leaf.3,1,Zea mays ssp.mays,leaf,V2
+S_0016,23,Subject,b73_V2root.1,1,Zea mays ssp.mays,root,V2
+S_0017,24,Subject,b73_V2root.2,1,Zea mays ssp.mays,root,V2
+S_0018,25,Subject,b73_V2root.3,1,Zea mays ssp.mays,root,V2
+S_0019,26,Subject,b73_V4_leaf.1,1,Zea mays ssp.mays,leaf,V4
+S_0020,27,Subject,b73_V4_leaf.2,1,Zea mays ssp.mays,leaf,V4
+QC_08,28,QC,QC,1,QC,QC,QC
+S_0021,29,Subject,b73_V4_leaf.3,1,Zea mays ssp.mays,leaf,V4
+S_0022,30,Subject,b73_V4root.1,1,Zea mays ssp.mays,root,V4
+S_0023,31,Subject,b73_V4root.2,1,Zea mays ssp.mays,root,V4
+S_0024,32,Subject,b73_V4root.3,1,Zea mays ssp.mays,root,V4
+S_0025,33,Subject,y12_VE_leaf.1,1,Zeamays ssp. Mexicana,leaf,VE
+S_0026,34,Subject,y12_VE_leaf.2,1,Zeamays ssp. Mexicana,leaf,VE
+S_0027,35,Subject,y12_VE_leaf.3,1,Zeamays ssp. Mexicana,leaf,VE
+S_0028,36,Subject,y12_VEroot.1,1,Zeamays ssp. Mexicana,root,VE
+S_0029,37,Subject,y12_VEroot.2,1,Zeamays ssp. Mexicana,root,VE
+QC_09,38,QC,QC,1,QC,QC,QC
+S_0030,39,Subject,y12_VEroot.3,1,Zeamays ssp. Mexicana,root,VE
+S_0031,40,Subject,y12_V1_leaf.1,1,Zeamays ssp. Mexicana,leaf,V1
+S_0032,41,Subject,y12_V1_leaf.2,1,Zeamays ssp. Mexicana,leaf,V1
+S_0033,42,Subject,y12_V1_leaf.3,1,Zeamays ssp. Mexicana,leaf,V1
+S_0034,43,Subject,y12_V1root.1,1,Zeamays ssp. Mexicana,root,V1
+S_0035,44,Subject,y12_V1root.2,1,Zeamays ssp. Mexicana,root,V1
+S_0036,45,Subject,y12_V1root.3,1,Zeamays ssp. Mexicana,root,V1
+S_0037,46,Subject,y12_V2_leaf.1,1,Zeamays ssp. Mexicana,leaf,V2
+S_0038,47,Subject,y12_V2_leaf.2,1,Zeamays ssp. Mexicana,leaf,V2
+S_0039,48,Subject,y12_V2_leaf.3,1,Zeamays ssp. Mexicana,leaf,V2
+S_0040,49,Subject,y12_V2root.1,1,Zeamays ssp. Mexicana,root,V2
+QC_10,50,QC,QC,1,QC,QC,QC
+S_0041,51,Subject,y12_V2root.2,1,Zeamays ssp. Mexicana,root,V2
+S_0042,52,Subject,y12_V2root.3,1,Zeamays ssp. Mexicana,root,V2
+S_0043,53,Subject,y12_V4_leaf.1,1,Zeamays ssp. Mexicana,leaf,V4
+S_0044,54,Subject,y12_V4_leaf.2,1,Zeamays ssp. Mexicana,leaf,V4
+S_0045,55,Subject,y12_V4_leaf.3,1,Zeamays ssp. Mexicana,leaf,V4
+S_0046,56,Subject,y12_V4root.1,1,Zeamays ssp. Mexicana,root,V4
+S_0047,57,Subject,y12_V4root.2,1,Zeamays ssp. Mexicana,root,V4
+S_0048,58,Subject,y12_V4root.3,1,Zeamays ssp. Mexicana,root,V4
+QC_11,59,QC,QC,1,QC,QC,QC
+QC_12,60,QC,QC,1,QC,QC,QC
+QC_13,61,QC,QC,1,QC,QC,QC
+QC_14,62,QC,QC,1,QC,QC,QC

@@ -1,0 +1,1674 @@
+{
+  "object_neg_af.rda": {
+    "sha256": "203f6007cf941632c3fa57b4ed8a6771156bae1b3a1e136ff334db3764be988b",
+    "process_info": [
+      {
+        "function": "create_mass_dataset()",
+        "parameters": {
+          "no": [
+            "no"
+          ]
+        }
+      },
+      {
+        "function": "mutate_ms2()",
+        "parameters": {
+          "column": [
+            "rp"
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ms1.ms2.match.mz.tol": [
+            15.0
+          ],
+          "ms1.ms2.match.rt.tol": [
+            15.0
+          ]
+        }
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~na_freq <= qc_na_freq`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~filter_tag_addcut == \"retain\"`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~Level == min(Level)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~Total.score == max(Total.score)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~order == 1`"
+          ]
+        }
+      },
+      {
+        "function": "impute_mv()",
+        "parameters": {
+          "method": [
+            "knn"
+          ],
+          "rowmax": [
+            0.5
+          ],
+          "colmax": [
+            0.8
+          ],
+          "maxp": [
+            1500.0
+          ],
+          "rng.seed": [
+            362436069.0
+          ]
+        }
+      },
+      {
+        "function": "normalize_data()",
+        "parameters": {
+          "method": [
+            "svr"
+          ],
+          "keep_scale": [
+            true
+          ],
+          "multiple": [
+            1.0
+          ],
+          "threads": [
+            1.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "mutate()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate()",
+        "parameters": {}
+      }
+    ]
+  },
+  "object_neg_norm.rda": {
+    "sha256": "bf1435f58f5dba35ec8ecf4244b857d518280e7a31302f5f190c12594c4e737d",
+    "process_info": [
+      {
+        "function": "create_mass_dataset()",
+        "parameters": {
+          "no": [
+            "no"
+          ]
+        }
+      },
+      {
+        "function": "mutate_ms2()",
+        "parameters": {
+          "column": [
+            "rp"
+          ],
+          "polarity": [
+            "negative"
+          ],
+          "ms1.ms2.match.mz.tol": [
+            15.0
+          ],
+          "ms1.ms2.match.rt.tol": [
+            15.0
+          ]
+        }
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~na_freq <= qc_na_freq`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "impute_mv()",
+        "parameters": {
+          "method": [
+            "knn"
+          ],
+          "rowmax": [
+            0.5
+          ],
+          "colmax": [
+            0.8
+          ],
+          "maxp": [
+            1500.0
+          ],
+          "rng.seed": [
+            362436069.0
+          ]
+        }
+      },
+      {
+        "function": "normalize_data()",
+        "parameters": {
+          "method": [
+            "svr"
+          ],
+          "keep_scale": [
+            true
+          ],
+          "multiple": [
+            1.0
+          ],
+          "threads": [
+            1.0
+          ]
+        }
+      }
+    ]
+  },
+  "object_pos_af.rda": {
+    "sha256": "e40a88c496d1b99cf4ef6fc705509e2a90f40ae7afb3dd4e1d84a90b05d7344d",
+    "process_info": [
+      {
+        "function": "create_mass_dataset()",
+        "parameters": {
+          "no": [
+            "no"
+          ]
+        }
+      },
+      {
+        "function": "mutate_ms2()",
+        "parameters": {
+          "column": [
+            "rp"
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ms1.ms2.match.mz.tol": [
+            15.0
+          ],
+          "ms1.ms2.match.rt.tol": [
+            15.0
+          ]
+        }
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~na_freq <= qc_na_freq`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~filter_tag_addcut == \"retain\"`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~Level == min(Level)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~Total.score == max(Total.score)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~order == 1`"
+          ]
+        }
+      },
+      {
+        "function": "impute_mv()",
+        "parameters": {
+          "method": [
+            "knn"
+          ],
+          "rowmax": [
+            0.5
+          ],
+          "colmax": [
+            0.8
+          ],
+          "maxp": [
+            1500.0
+          ],
+          "rng.seed": [
+            362436069.0
+          ]
+        }
+      },
+      {
+        "function": "normalize_data()",
+        "parameters": {
+          "method": [
+            "svr"
+          ],
+          "keep_scale": [
+            true
+          ],
+          "multiple": [
+            1.0
+          ],
+          "threads": [
+            1.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "annotate_metabolites_mass_dataset()",
+        "parameters": {
+          "ms1.match.ppm": [
+            35.0
+          ],
+          "ms2.match.ppm": [
+            35.0
+          ],
+          "mz.ppm.thr": [
+            400.0
+          ],
+          "ms2.match.tol": [
+            0.5
+          ],
+          "fraction.weight": [
+            0.3
+          ],
+          "dp.forward.weight": [
+            0.6
+          ],
+          "dp.reverse.weight": [
+            0.1
+          ],
+          "rt.match.tol": [
+            30.0
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ce": [
+            "all"
+          ],
+          "column": [
+            "rp"
+          ],
+          "ms1.match.weight": [
+            0.25
+          ],
+          "rt.match.weight": [
+            0.25
+          ],
+          "ms2.match.weight": [
+            0.5
+          ],
+          "total.score.tol": [
+            0.5
+          ],
+          "candidate.num": [
+            3.0
+          ],
+          "threads": [
+            6.0
+          ],
+          "remove_fragment_intensity_cutoff": [
+            0.0
+          ]
+        }
+      },
+      {
+        "function": "mutate()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate()",
+        "parameters": {}
+      }
+    ]
+  },
+  "object_pos_norm.rda": {
+    "sha256": "f923a0c28e0d3831783d6b735ca4f311153fe2cbec56b7382f43a04c83cd1550",
+    "process_info": [
+      {
+        "function": "create_mass_dataset()",
+        "parameters": {
+          "no": [
+            "no"
+          ]
+        }
+      },
+      {
+        "function": "mutate_ms2()",
+        "parameters": {
+          "column": [
+            "rp"
+          ],
+          "polarity": [
+            "positive"
+          ],
+          "ms1.ms2.match.mz.tol": [
+            15.0
+          ],
+          "ms1.ms2.match.rt.tol": [
+            15.0
+          ]
+        }
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "mutate_variable_na_freq()",
+        "parameters": {}
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~na_freq <= qc_na_freq`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "filter()",
+        "parameters": {
+          "parameter": [
+            "`~across(.cols = i + 3, .fns = ~. <= S_na_freq)`"
+          ]
+        }
+      },
+      {
+        "function": "impute_mv()",
+        "parameters": {
+          "method": [
+            "knn"
+          ],
+          "rowmax": [
+            0.5
+          ],
+          "colmax": [
+            0.8
+          ],
+          "maxp": [
+            1500.0
+          ],
+          "rng.seed": [
+            362436069.0
+          ]
+        }
+      },
+      {
+        "function": "normalize_data()",
+        "parameters": {
+          "method": [
+            "svr"
+          ],
+          "keep_scale": [
+            true
+          ],
+          "multiple": [
+            1.0
+          ],
+          "threads": [
+            1.0
+          ]
+        }
+      }
+    ]
+  }
+}

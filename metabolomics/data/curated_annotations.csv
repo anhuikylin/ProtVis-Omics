@@ -1,0 +1,210 @@
+variable_id,Compound.name.collapse,Level.collapse,Adduct.collapse
+M273T676_POS,?-Estradiol | Galaxolidone,2 | 2,(M+H)+ | (M+H)+
+M273T738_POS,?-Estradiol | Galaxolidone,2 | 2,(M+H)+ | (M+H)+
+M279T726_POS,?-linolenic acid,2,(M+H)+
+M147T69_NEG,(-)-Citramalic acid | (S)-(+)-Citramailc acid | Citramalic acid,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M377T254_POS,(-)-Riboflavin | Riboflavin,2 | 2,(M+H)+ | (M+H)+
+M219T92_NEG,(S)-5-(4-Hydroxyphenyl)-5-ethylhydantoin | Met-Ala,2 | 2,(M-H)- | (M-H)-
+M297T741_NEG,(Z)-3-Hydroxyoctadec-7-enoic acid,2,(M-H)-
+M144T210_POS,1-Naphthylamine,2,(M+H)+
+M85T70_NEG,"1,4-Butynediol",2,(M-H)-
+M313T696_NEG,"12,13-Dihydroxy-9Z-octadecenoic acid | 9,10-Dihydroxy-12Z-octadecenoic acid",2 | 2,(M-H)- | (M-H)-
+M151T301_POS,2-Aminobenzothiazole | 2-Mercaptobenzimidazole,2 | 2,(M+H)+ | (M+H)+
+M111T69_NEG,2-Furancarboxylic acid | 3-Furancarboxylic acid,2 | 2,(M-H)- | (M-H)-
+M111T99_NEG,2-Furancarboxylic acid | 3-Furancarboxylic acid,2 | 2,(M-H)- | (M-H)-
+M175T177_2_NEG,2-Isopropylmalic acid,2,(M-H)-
+M145T134_NEG,2-Methylglutaric Acid,2,(M-H)-
+M153T271_NEG,"2,3-Dihydroxybenzoic acid | 3,4-Dihydroxybenzoic acid | 2-Pyrocatechuic acid | Protocatechuic acid",2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M122T914_POS,"2,4,6-Trimethylpyridine | Phenylethylamine",2 | 2,(M+H)+ | (M+H)+
+M252T68_POS,2'-Deoxyadenosine | 2'-Deoxyadenosine monohydrate | Cordycepin,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M307T598_NEG,"3-Cyclopentene-1-octanoic acid, 2-(3-hydroxy-1-penten-1-yl)-5-oxo-",2,(M-H)-
+M193T438_2_NEG,3-Hydroxy-4-methoxycinnamic acid | Monoethyl phthalate | trans-Ferulic acid,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M121T367_NEG,3-Hydroxybenzaldehyde | 4-Hydroxybenzaldehyde,2 | 2,(M-H)- | (M-H)-
+M121T588_NEG,3-Hydroxybenzaldehyde | 4-Hydroxybenzaldehyde,2 | 2,(M-H)- | (M-H)-
+M123T301_POS,3-Hydroxybenzaldehyde | Benzoic acid,2 | 2,(M+H)+ | (M+H)+
+M167T101_POS,3-Methylxanthine | 7-Methylxanthine,2 | 2,(M+H)+ | (M+H)+
+M167T123_POS,3-Methylxanthine | 7-Methylxanthine,2 | 2,(M+H)+ | (M+H)+
+M167T260_POS,3-Methylxanthine | 7-Methylxanthine,2 | 2,(M+H)+ | (M+H)+
+M167T301_2_POS,3-Methylxanthine | 7-Methylxanthine,2 | 2,(M+H)+ | (M+H)+
+M110T100_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M110T123_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M110T259_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M110T301_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M110T322_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M110T401_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M110T964_POS,3-Pyridinemthanol | 4-Aminophenol,2 | 2,(M+H)+ | (M+H)+
+M153T115_NEG,"3,4-Dihydroxybenzoic acid | Gentisic acid | Protocatechuic acid",2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M165T236_POS,4-Coumaric acid | p-Coumaric acid | trans-4-Coumaric acid,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M121T816_NEG,4-hydroxybenzaldehyde,2,(M-H)-
+M121T276_NEG,4-Hydroxybenzaldehyde | Benzoic acid,2 | 2,(M-H)- | (M-H)-
+M121T456_NEG,4-Hydroxybenzaldehyde | Benzoic acid,2 | 2,(M-H)- | (M-H)-
+M121T562_NEG,4-Hydroxybenzaldehyde | Benzoic acid,2 | 2,(M-H)- | (M-H)-
+M121T664_NEG,4-Hydroxybenzaldehyde | Benzoic acid,2 | 2,(M-H)- | (M-H)-
+M121T778_NEG,4-hydroxybenzaldehyde | Benzoic acid,2 | 2,(M-H)- | (M-H)-
+M121T854_NEG,4-Hydroxybenzaldehyde | Benzoic acid,2 | 2,(M-H)- | (M-H)-
+M121T718_NEG,4-hydroxybenzaldehyde | Benzoic acid | 4-Hydroxybenzaldehyde,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M163T537_POS,4-Hydroxycoumarin,2,(M+H)+
+M167T337_NEG,"4-Hydroxymandelic acid | vanillic acid | 2-Hydroxy-5-methoxybenzoic acid | 3,4-Dihydroxybenzeneacetic acid | Vanillic acid",2 | 2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)- | (M-H)-
+M150T152_POS,4-Hydroxymandelonitrile | L-Methionine,2 | 2,(M+H)+ | (M+H)+
+M150T98_POS,4-Hydroxymandelonitrile | L-Methionine,2 | 2,(M+H)+ | (M+H)+
+M138T142_NEG,4-Nitrophenol,2,(M-H)-
+M138T290_NEG,4-Nitrophenol,2,(M-H)-
+M119T332_NEG,4-Vinylphenol,2,(M-H)-
+M154T353_POS,5-Aminosalicylic acid | Mesalazine,2 | 2,(M+H)+ | (M+H)+
+M128T69_NEG,5-Flurocytosine | Flucytosine (5-FC),2 | 2,(M-H)- | (M-H)-
+M130T63_POS,5-OXO-D-PROLINE | 5-OXO-L-PROLINE | L-Pyroglutamic acid,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M433T348_POS,"5,7-dihydroxy-2-(4-hydroxyphenyl)-8-[(2S,3R,4R,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]chromen-4-one | Isovitexin(4) | Vitexin",2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M309T629_NEG,"9-Hydroperoxy-10E,12Z,15Z-octadecatrienoic acid | 9-Oxo-11-(3-pentyl-2-oxiranyl)-10E-undecenoic acid",2 | 2,(M-H)- | (M-H)-
+M293T735_NEG,"9-Oxo-10(E),12(E)-octadecadienoic acid",2,(M-H)-
+M309T716_NEG,9-Oxo-11-(3-pentyl-2-oxiranyl)-10E-undecenoic acid,2,(M-H)-
+M134T131_NEG,Adenine,2,(M-H)-
+M134T155_NEG,Adenine,2,(M-H)-
+M134T181_NEG,Adenine,2,(M-H)-
+M134T65_NEG,Adenine,2,(M-H)-
+M136T64_POS,Adenine | ADENINE HYDROCHLORIDE,2 | 2,(M+H)+ | (M+H)+
+M145T117_NEG,Adipic acid,2,(M-H)-
+M201T110_NEG,Ala-Ile | Ala-Leu,2 | 2,(M-H)- | (M-H)-
+M203T109_2_POS,Ala-Leu,2,(M+H)+
+M203T70_POS,Alanyl-Leucine,2,(M+H)+
+M259T63_NEG,alpha-D-(+)-mannose-1-phosphate sodium salt hydrate | D-Mannose-6-phosphate mono sodium salt | alpha-D-(+)-mannose-1-phosphate,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M579T341_POS,Apigenin-8-C-glucoside-2'-rhamnoside,2,(M+H)+
+M577T341_NEG,Apigenin-8-C-glucoside-2'-rhamnoside | vitexin-2''-O-rhamnoside,2 | 2,(M-H)- | (M-H)-
+M169T597_NEG,Azelaic acid,2,(M-H2O-H)-
+M187T421_2_NEG,Azelaic acid,2,(M-H)-
+M183T697_POS,Benzophenone,2,(M+H)+
+M309T745_NEG,C12-AE1S (TENTATIVE),2,(M-H)-
+M265T719_NEG,C12-AS (TENTATIVE) | lauryl sulfate,2 | 2,(M-H)- | (M-H)-
+M181T145_POS,Caffeic acid | trans-Caffeic acid,2 | 2,(M+H)+ | (M+H)+
+M347T725_POS,Calycanthine | Corticosterone,2 | 2,(M+H)+ | (M+H)+
+M109T152_NEG,Catechol,2,(M-H)-
+M109T302_NEG,Catechol | o-Benzenediol | Pyrocatechol,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M183T69_NEG,Chelidonic acid,2,(M-H)-
+M353T165_NEG,Chlorogenic acid,2,(M-H)-
+M353T103_NEG,Chlorogenic acid | Neochlorogenic acid,2 | 2,(M-H)- | (M-H)-
+M173T69_2_NEG,cis-Aconitic Acid | trans-Aconitic acid,2 | 2,(M-H)- | (M-H)-
+M129T1076_NEG,Citraconic Acid | Itaconic acid,2 | 2,(M-H)- | (M-H)-
+M129T732_NEG,Citraconic Acid | Itaconic acid,2 | 2,(M-H)- | (M-H)-
+M129T855_NEG,Citraconic Acid | Itaconic acid,2 | 2,(M-H)- | (M-H)-
+M129T540_NEG,Citraconic Acid | Itaconic acid | Citraconic acid,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M129T398_NEG,Citraconic Acid | Itaconic acid | Citraconic acid | Mesaconic acid,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M129T569_NEG,Citraconic Acid | Itaconic acid | Citraconic acid | Mesaconic acid,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M129T663_NEG,Citraconic Acid | Itaconic acid | Citraconic acid | Mesaconic acid,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M129T947_NEG,Citraconic Acid | Itaconic acid | Citraconic acid | Mesaconic acid,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M129T70_2_NEG,Citraconic acid | Itaconic acid | Mesaconic acid,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M191T69_NEG,Citric acid,2,(M-H)-
+M361T703_POS,Cortisone,2,(M+H)+
+M112T66_POS,Cytosine,2,(M+H)+
+M105T63_NEG,D-(+)-Glyceric acid | D-(+)-Glyceric acid hemicalcium salt | DL-Glyceric acid sol | Glyceric acid,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M133T82_2_NEG,D-(+)-Malic acid,2,(M-H)-
+M133T63_1_NEG,D-(+)-Malic acid | L-Malic acid,2 | 2,(M-H)- | (M-H)-
+M132T70_2_POS,D-Alloisoleucine | L-Isoleucine | L-Norleucine | Norleucine,2 | 2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+ | (M+H)+
+M220T84_POS,D-Pantothenic acid | D-Pantothenic acid hemicalcium salt | Pantothenic acid,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M218T84_NEG,D-Pantothenic acid | D-Pantothenic acid hemicalcium salt | Sodium pantothenate,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M149T319_2_NEG,D-tartaric acid | L(+)-Tartaric acid,2 | 2,(M-H)- | (M-H)-
+M149T399_NEG,D-tartaric acid | L(+)-Tartaric acid,2 | 2,(M-H)- | (M-H)-
+M593T374_NEG,Datiscin | kaempferol-3-O-rutinoside,2 | 2,(M-H)- | (M-H)-
+M595T374_POS,Datiscin | kaempferol-3-O-rutinoside,2 | 2,(M+H)+ | (M+H)+
+M279T751_POS,Di-n-butyl phthalate | Dibutyl phthalate,2 | 2,(M+H)+ | (M+H)+
+M221T615_NEG,Diethyl-phthalate,2,(M-H)-
+M79T64_POS,Dimethyl sulfoxide,2,(M+H)+
+M195T438_POS,Dimethyl-phthalate | Dimethylphthalate,2 | 2,(M+H)+ | (M+H)+
+M89T69_NEG,DL-Lactic acid,2,(M-H)-
+M229T606_NEG,Dodecanedioic acid,2,(M-H)-
+M325T766_NEG,Dodecylbenzenesulfonic acid | 4-Dodecylbenzenesulfonic Acid,2 | 2,(M-H)- | (M-H)-
+M338T860_POS,Erucamide,2,(M+H)+
+M117T965_NEG,Erythronolactone,2,(M-H)-
+M117T1025_NEG,Erythronolactone | Methylmalonic acid | Succinis acid,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M195T267_POS,Ferulic acid | trans-Ferulic acid,2 | 2,(M+H)+ | (M+H)+
+M195T358_POS,Ferulic acid | trans-Ferulic acid,2 | 2,(M+H)+ | (M+H)+
+M115T63_NEG,Fumaric acid | Maleic acid,2 | 2,(M-H)- | (M-H)-
+M179T63_NEG,Galactose | Glucose,2 | 2,(M-H)- | (M-H)-
+M273T702_POS,Galaxolidone,2,(M+H)+
+M146T63_NEG,Glutamic acid | L-Glutamic acid,2 | 2,(M-H)- | (M-H)-
+M189T111_POS,Gly-Ile | Gly-Leu,2 | 2,(M+H)+ | (M+H)+
+M73T290_NEG,Glyoxylate,2,(M-H)-
+M73T319_NEG,Glyoxylate,2,(M-H)-
+M152T68_POS,Guanine,2,(M+H)+
+M284T69_POS,Guanosine,2,(M+H)+
+M156T63_POS,Histidine | L-Histidine,2 | 2,(M+H)+ | (M+H)+
+M447T306_NEG,Homoorientin | Luteolin-6-C-glucoside,2 | 2,(M-H)- | (M-H)-
+M449T307_POS,Homoorientin | Luteolin-6-C-glucoside,2 | 2,(M+H)+ | (M+H)+
+M363T675_POS,Hydrocortisone,2,(M+H)+
+M363T692_POS,Hydrocortisone,2,(M+H)+
+M465T344_POS,Hyperoside | quercetin-3-O-beta-glucopyranoside | Quercetin-3-O-galactoside | Quercetin-3-O-glucoside,2 | 2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+ | (M+H)+
+M137T68_POS,Hypoxanthine,2,(M+H)+
+M120T85_POS,Indoline,2,(M+H)+
+M124T68_POS,Isonicotinic acid | Nicotinic acid,2 | 2,(M+H)+ | (M+H)+
+M139T534_POS,Isophorone,2,(M+H)+
+M625T378_POS,isorhamnetin-3-O-galactoside-6''-rhamnoside | isorhamnetin-3-O-rutinoside | isorhamnetin-3-rutinoside,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M623T378_NEG,isorhamnetin-3-O-rutinoside | isorhamnetin-3-rutinoside,2 | 2,(M-H)- | (M-H)-
+M431T348_NEG,Isovitexin(4) | Vitexin,2 | 2,(M-H)- | (M-H)-
+M209T437_NEG,Jasmonic acid,2,(M-H)-
+M209T459_2_NEG,Jasmonic acid,2,(M-H)-
+M209T704_NEG,Jasmonic acid,2,(M-H)-
+M209T550_NEG,Jasmonic acid | (.+/-.)7-epi-Jasmonic acid,2 | 2,(M-H)- | (M-H)-
+M285T550_NEG,Kaempferol | Luteolin,2 | 2,(M-H)- | (M-H)-
+M287T412_POS,Kaempferol | Luteolin,2 | 2,(M+H)+ | (M+H)+
+M449T374_POS,Kaempferol-3-Glucoside,2,(M+H)+
+M147T63_2_POS,L-Glutamine,2,(M+H)+
+M147T76_POS,L-Glutamine,2,(M+H)+
+M150T307_POS,L-Methionine,2,(M+H)+
+M118T67_POS,L-Norvaline | L-Valine | VALINE | Valine,2 | 2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+ | (M+H)+
+M166T85_1_POS,L-Phenylalanine | Phenylalanine,2 | 2,(M+H)+ | (M+H)+
+M116T63_POS,L-Proline | Proline,2 | 2,(M+H)+ | (M+H)+
+M205T138_POS,L-Tryptophan | Tryptophan,2 | 2,(M+H)+ | (M+H)+
+M182T69_POS,L-Tyrosine | Tyrosine,2 | 2,(M+H)+ | (M+H)+
+M287T374_POS,Luteolin,2,(M+H)+
+M150T68_POS,Methionine,2,(M+H)+
+M73T70_NEG,Methylacetate | Propionic acid,2 | 2,(M-H)- | (M-H)-
+M365T691_POS,MMV146306,2,(M+H)+
+M158T133_NEG,N-Acetyl-DL-valine,2,(M-H)-
+M172T291_NEG,N-Acetylleucine,2,(M-H)-
+M172T274_NEG,N-Acetylleucine | N-Acetyl-D-norleucine,2 | 2,(M-H)- | (M-H)-
+M206T333_NEG,N-Acetylphenylalanine | N-Acetyl-L-phenylalanine,2 | 2,(M-H)- | (M-H)-
+M146T72_POS,N-Methylisoleucine | N-Methylleucine,2 | 2,(M+H)+ | (M+H)+
+M74T1030_POS,"N,N-Dimethylformamide",2,(M+H)+
+M74T72_POS,"N,N-Dimethylformamide",2,(M+H)+
+M74T958_POS,"N,N-Dimethylformamide",2,(M+H)+
+M293T63_POS,N4-Acetylsulfadiazine,2,(M+H)+
+M310T503_POS,Nadolol,2,(M+H)+
+M271T542_NEG,"Naringenin | 4',5,7-trihydroxyflavanone",2 | 2,(M-H)- | (M-H)-
+M123T69_POS,Niacinamide | Nicotinamide,2 | 2,(M+H)+ | (M+H)+
+M593T265_NEG,NP-000002(10),2,(M-H)-
+M563T330_NEG,NP-000004(11) | NP-000062(6),2 | 2,(M-H)- | (M-H)-
+M563T303_NEG,NP-000062(6),2,(M-H)-
+M318T686_POS,Ormosanine,2,(M+H)+
+M79T79_NEG,Ortophosphate,2,(M-H2O-H)-
+M206T82_POS,Panthenol,2,(M+H)+
+M121T69_POS,Phenylacetaldehyde,2,(M+H)+
+M122T130_POS,Phenylethylamine,2,(M+H)+
+M169T439_NEG,Phloroglucinolcarboxylic acid,2,(M-H)-
+M377T83_POS,Picolinafen,2,(M+H)+
+M377T99_POS,Picolinafen,2,(M+H)+
+M122T319_NEG,Picolinic acid,2,(M-H)-
+M122T94_NEG,Picolinic acid,2,(M-H)-
+M313T297_NEG,Picrotoxinin,2,(M+Na-2H)-
+M87T63_NEG,Pyruvic acid,2,(M-H)-
+M303T345_POS,Quercetin,2,(M+H)+
+M609T344_NEG,Quercetin 3-O-[2''-O-b-D-glucopyranosyl]-a-L-rhamnopyranoside | Quercetin-3-O-rutinoside | Rutin | Rutine,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M551T377_POS,Quercetin-3-(6''-malonyl)-Glucoside,2,(M+H)+
+M505T376_NEG,Quercetin-3-O-beta-glucopyranosyl-6'-acetate | Quercetin-3-O-glucose-6''-acetate | Quercetin-3-O-glucosyl-6''-acetate,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M611T345_POS,Quercetin-3-O-rutinoside | Rutin | Rutine,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+
+M327T143_NEG,Ricinine,2,(2M-H)-
+M137T188_NEG,Salicylic acid | Sodium 4-hydroxy-benzoate | 3-Hydroxybenzoic acid,2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M137T432_NEG,Salicylic acid | Sodium 4-hydroxy-benzoate | 3-Hydroxybenzoic acid | 4-Hydroxybenzoic acid,2 | 2 | 2 | 2,(M-H)- | (M-H)- | (M-H)- | (M-H)-
+M345T749_POS,SB 205607,2,(M+H)+
+M345T762_POS,SB 205607,2,(M+H)+
+M201T353_NEG,Sebacic acid,2,(M-H)-
+M201T488_NEG,Sebacic acid,2,(M-H)-
+M104T63_NEG,Serine,2,(M-H)-
+M106T63_POS,Serine,2,(M+H)+
+M177T84_POS,Serotonin hydrochloride | Serotonin,2 | 2,(M+H)+ | (M+H)+
+M207T529_NEG,"Sinapoyl aldehyde | Ferulic acid methyl ester | trans-3,5-Dimethoxy-4-hydroxycinnamaldehyde",2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-
+M173T343_NEG,Suberic acid,2,(M-H)-
+M117T70_NEG,Succinic acid | Succinis acid,2 | 2,(M-H)- | (M-H)-
+M292T705_POS,Terbinafine,2,(M+H)+
+M257T606_NEG,Tetradecanedioic acid,2,(M-H)-
+M151T761_POS,Thymol,2,(M+H)+
+M227T585_NEG,trans-Traumatic acid,2,(M-H)-
+M113T69_POS,Uracil,2,(M+H)+
+M243T69_NEG,Uridine | uridine,2 | 2,(M-H)- | (M-H)-

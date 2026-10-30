@@ -1,0 +1,8 @@
+variable_id,Compound.name.collapse,Level.collapse,Adduct.collapse,annotation_status,matrix_status
+M181T145_POS,Caffeic acid | trans-Caffeic acid,2 | 2,(M+H)+ | (M+H)+,both,present
+M165T197_POS,,,,left_only,present
+M207T529_NEG,"Sinapoyl aldehyde | Ferulic acid methyl ester | trans-3,5-Dimethoxy-4-hydroxycinnamaldehyde",2 | 2 | 2,(M-H)- | (M-H)- | (M-H)-,both,present
+M195T267_POS,Ferulic acid | trans-Ferulic acid,2 | 2,(M+H)+ | (M+H)+,both,missing
+M195T358_POS,Ferulic acid | trans-Ferulic acid,2 | 2,(M+H)+ | (M+H)+,both,present
+M165T236_POS,4-Coumaric acid | p-Coumaric acid | trans-4-Coumaric acid,2 | 2 | 2,(M+H)+ | (M+H)+ | (M+H)+,both,present
+M166T85_1_POS,L-Phenylalanine | Phenylalanine,2 | 2,(M+H)+ | (M+H)+,both,present
