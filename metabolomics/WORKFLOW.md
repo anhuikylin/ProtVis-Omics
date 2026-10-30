@@ -6,26 +6,27 @@ This guide distinguishes the archived B73/Y12 results from the public MetMiner s
 
 | Stage | Archived evidence | Reference source | What can be concluded |
 | --- | --- | --- | --- |
-| Raw data conversion and MS1 processing | The project owner confirmed tidyMass for raw-data conversion; `expmat.csv` is already a feature table and MS2 MGF files are present in the archive. | [data_import_raw.R](reference/MetMiner/R/data_import_raw.R) documents a MetMiner raw-input option; it is reference code, not a confirmed original run script. | Raw MS1 files and a peak-picking run record were not identified. Exact file formats, conversion command, tidyMass version and peak-picking settings remain unverified. |
+| Raw conversion and peak extraction | The project owner confirmed tidyMass conversion, followed by import of converted data and sample information into MetMiner for peak extraction. `expmat.csv` is an archived extracted feature table. | [data_import_raw.R](reference/MetMiner/R/data_import_raw.R) documents a MetMiner raw-input option; it is reference code, not the original run script. | Raw MS1 files and a peak-picking run record were not identified. Exact formats, conversion command, software versions and extraction settings remain unverified. |
 | Feature table import | `expmat.csv`, `sample_info.csv`, and `Tables_StepbyStep/3.4.tblImport_expmat_check.csv`. | [data_import_tbl.R](reference/MetMiner/R/data_import_tbl.R) creates an import check using the same output name. | Strong evidence that MetMiner's table import was used for this output; source alone does not prove settings or version. |
 | Noise and sample review | `3.6.2.NoisyinNegMod.csv` and `object_*_mv.rda`, `object_*_outlier.rda` appear in the archive. | [data_rm_noise.R](reference/MetMiner/R/data_rm_noise.R), [data_rm_outlier.R](reference/MetMiner/R/data_rm_outlier.R), [save_massobj.R](reference/MetMiner/R/save_massobj.R). | Output names are consistent with these stages. Thresholds and excluded samples are not established. |
 | Missing-value handling | `object_*_impute.rda`. | [data_mv_impute.R](reference/MetMiner/R/data_mv_impute.R). | Archived process records show KNN, rowmax 0.5, colmax 0.8, maxp 1500, and rng.seed 362436069 for both ion modes. |
 | Normalization | `object_*_norm.rda` and `Norm_expmat.xlsx`. | [data_normalization.R](reference/MetMiner/R/data_normalization.R). | Archived process records show method svr, keep_scale TRUE, multiple 1, and threads 1 for both ion modes. |
 | Annotation and filtering | `object_*_anno.rda`, `object_*_af.rda`, `Result/Database/auto_saved.dblist`, and annotation tables. | [annotation.R](reference/MetMiner/R/annotation.R), [annotation_filtering.R](reference/MetMiner/R/annotation_filtering.R). | Names match the software. The archived process records include matching parameters, but database identities and versions require verification. |
 | Merge and export | `Result/Data_Export/object_merge.rda`, `table_merge.xlsx`, and MetDNA exports. | [data_merge.R](reference/MetMiner/R/data_merge.R). | The matching names support MetMiner export; they do not imply confirmed metabolite identities. |
-| Differential analysis | `Result/DAM/*/DAM_analysis.xlsx` and `opls-da.png` are present in the archive. | [dam_result.R](reference/MetMiner/R/dam_result.R). | The output naming matches MetMiner; individual contrasts, test direction, thresholds and adjustment method require verification. |
 | Candidate extraction | `phe_key_id.xlsx` and `phe_key_mat.xlsx`. | [01_extract_phenylpropanoids.py](scripts/01_extract_phenylpropanoids.py), written for this repository. | Reproduces the five stored annotated abundance rows; it does not recover the original biological selection criteria. |
 
 ## MetMiner operation guide
 
-The output paths and object histories strongly support MetMiner for the archived table-processing stages. Follow the [official project setup](https://shawnwx2019.github.io/metminer-cookbook/content/Project_init.html), [data import and cleaning](https://shawnwx2019.github.io/metminer-cookbook/content/Import_data.html), [feature annotation](https://shawnwx2019.github.io/metminer-cookbook/content/feature_anno.html), and [DAM analysis](https://shawnwx2019.github.io/metminer-cookbook/content/dam.html) instructions:
+The project owner confirmed the order **tidyMass conversion → MetMiner import with sample information → peak extraction and downstream processing**. Follow the [project setup](https://shawnwx2019.github.io/metminer-cookbook/content/Project_init.html), [data import and cleaning](https://shawnwx2019.github.io/metminer-cookbook/content/Import_data.html), and [feature annotation](https://shawnwx2019.github.io/metminer-cookbook/content/feature_anno.html) guides:
 
-1. Set the working directory and upload the sample information CSV. Verify sample identifiers, classes, groups, batches and injection order.
-2. Import the feature table and MS/MS data when available, then check the imported sample and feature information. An existing feature table starts downstream of peak detection.
-3. Review the data, remove noisy features and outliers, impute missing values, and normalize. Save the processing settings and inspect quality-control plots.
-4. Select annotation databases, set matching parameters, run annotation and filtering, then merge positive and negative modes.
-5. Configure the comparison groups and DAM test parameters, check the comparisons and run the analysis. Export the results and record the precise direction and thresholds.
-6. For the archived phenylpropanoid list, run the repository's extraction script described below; review candidate identities and the feature audit.
+1. Convert the raw metabolomics data with tidyMass; document input/output formats, version and command when the original record is available.
+2. In MetMiner, set the working directory and import sample information and converted mass-spectrometry data. Verify sample IDs, group labels, QC class, batch, injection order and ion mode.
+3. Check the inputs and perform peak extraction. Review the resulting feature matrix and verify the sample columns. Exact original extraction settings are not available.
+4. Review the feature data, remove noisy features and outliers, impute missing values, and normalize positive and negative modes. Record quality-control criteria and inspect data before and after normalization.
+5. Select annotation databases, set matching parameters, annotate and filter features, then merge ion modes.
+6. For the archived phenylpropanoid list, run the repository's extraction script and review the feature audit.
+
+The archived feature-table import check also indicates a table-import operation; it does not resolve how that operation relates to the earlier converted-data import.
 
 ### Settings recovered from archived objects
 
@@ -36,7 +37,7 @@ The `process_info` slots of four archived `02.TQMSDataProcessing/Result/{POS,NEG
 - Both annotation histories record `ms1.match.ppm = 35`, `ms2.match.ppm = 35`, `mz.ppm.thr = 400`, `ms2.match.tol = 0.5`, `rt.match.tol = 30`, `total.score.tol = 0.5`, and `candidate.num = 3`. See the JSON for the other recorded weights and settings.
 - Recorded filtering expressions refer to `qc_na_freq` and `S_na_freq`, but the numerical values of those variables were not recovered. Database identities, versions, and the exact project-specific running script are not established by these records.
 
-These are values recorded in the stored objects, not evidence that the entire original analysis has been reproduced. The original MS1 peak-picking procedure and DAM settings remain unverified.
+These are values recorded in the stored objects, not evidence that the entire original analysis has been reproduced. The precise MS1 peak-picking settings remain unverified.
 
 ## Inputs and execution
 
@@ -47,7 +48,7 @@ These are values recorded in the stored objects, not evidence that the entire or
 
 ## Parameter record needed for an exact rerun
 
-The object records recover the imputation, normalization and selected annotation arguments listed above. Still needed are the exact software and database versions, MS1 peak-picking settings and sample-to-file mapping, numerical quality and missingness thresholds, sample exclusions, database identities, and differential comparison direction, tests, cutoffs and multiple-testing correction. Do not substitute defaults for missing project settings.
+The object records recover the imputation, normalization and selected annotation arguments listed above. Still needed are the exact software and database versions, MS1 peak-picking settings and sample-to-file mapping, numerical quality and missingness thresholds, sample exclusions, database identities, and the remaining project-specific settings. Do not substitute defaults for missing project settings.
 
 The archived candidate list has seven feature IDs. Five are both annotated and present in the normalized matrix. `M165T197_POS` lacks an annotation in the supplied curated table, and `M195T267_POS` lacks a row in the normalized matrix. See [feature_audit.csv](results/feature_audit.csv). Multi-name annotations remain putative and should not be treated as individually confirmed identifications.
 

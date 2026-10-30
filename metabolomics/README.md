@@ -6,23 +6,13 @@ The project used **tidyMass for raw metabolomics data conversion**, as confirmed
 
 ## Analysis at a glance
 
-```text
-Raw metabolomics data → tidyMass conversion\n                        │\nFeature matrix + sample metadata + available MS/MS
-                        │
-              MetMiner table import
-                        │
-        Noise/outlier review → missing-value imputation
-                        │
-                SVR normalization
-                        │
-            Annotation → filtering → merge
-                        │
-        Differential accumulated metabolite analysis
-                        │
-       Archived candidate IDs → phenylpropanoid extraction
-```
+1. Convert the raw metabolomics data with tidyMass.
+2. Import the converted mass-spectrometry data and sample information into MetMiner; perform peak extraction.
+3. Review the feature data, remove noisy features and outliers, impute missing values, and normalize each ion mode.
+4. Annotate and filter features, then integrate positive- and negative-mode results.
+5. Extract the archived phenylpropanoid-related features for leaf and root.
 
-Output names and the stored objects strongly support MetMiner for the archived table-processing stages. Their presence does not establish the exact MetMiner version or the original peak-picking parameters.
+This workflow order follows the project owner's description. The archived feature-table import check documents a table-import operation as well; the available files do not establish how that operation relates to the earlier converted-data import. Peak-picking parameters and software versions still need to be recovered.
 
 ## Inputs and archived files
 
@@ -38,13 +28,19 @@ Output names and the stored objects strongly support MetMiner for the archived t
 | [reference/MetMiner/](reference/MetMiner/) | Selected unmodified MetMiner source modules and their [MIT license](reference/MetMiner/LICENSE); this is not the complete application. |
 | [results/](results/) | Candidate extraction tables, audit and selected archived processing metadata. |
 
-CSV files converted from workbooks retain the values read from the specified sheets, not Excel formatting. The archived MS2 MGF files, other database files, DAM workbooks and figures are not included here. See [WORKFLOW.md](WORKFLOW.md) for source-to-output evidence.
+CSV files converted from workbooks retain the values read from the specified sheets, not Excel formatting. The archived MS2 MGF files, other database files and figures are not included here. See [WORKFLOW.md](WORKFLOW.md) for source-to-output evidence.
 
-## Upstream — raw data conversion\n\nThe project owner confirmed that tidyMass was used for raw metabolomics data conversion. The exact conversion tool or command, file formats, tidyMass version, and peak-picking settings have not been independently recovered. No raw MS1 instrument files or conversion script are included, so this stage cannot yet be rerun from this repository.\n\n## Step 1 — project setup and feature import
+## Upstream — raw data conversion
 
-Use the full [MetMiner application](https://github.com/ShawnWx2019/MetMiner) and [official cookbook](https://shawnwx2019.github.io/metminer-cookbook/). Set a working directory, supply the sample metadata and confirm sample IDs, classes, groups, batches and injection order. Import the feature table and compatible MS/MS data if available, then check that identifiers and sample columns agree.
+The project used tidyMass for raw metabolomics data conversion. The converted data and sample information were then imported into MetMiner. Original instrument files and the conversion script are not included; the precise input/output formats, command and tidyMass version require the original records.
 
-The archived file `3.4.tblImport_expmat_check.csv` matches an output name in MetMiner's [data_import_tbl.R](reference/MetMiner/R/data_import_tbl.R). This supports the table-import stage; the exact link between the recorded tidyMass conversion and feature-table generation requires the original run record. The copied reference modules depend on the full application and are not an independently runnable workflow.
+## Step 1 — import the converted data and extract peaks
+
+Use the full [MetMiner application](https://github.com/ShawnWx2019/MetMiner) and its [official cookbook](https://shawnwx2019.github.io/metminer-cookbook/). Set a working directory and import the sample information, checking sample IDs, experimental groups, QC labels, batch and injection order. Import the converted mass-spectrometry data and any applicable MS/MS data, check the positive- and negative-mode inputs, and perform peak extraction in MetMiner.
+
+Review the resulting feature data and verify that sample IDs match the metadata. The archived [feature matrix](data/raw_feature_matrix.csv) contains feature identifiers, m/z, retention time, ion mode and abundance columns; it is an extracted table, not instrument raw data. A separate archived `3.4.tblImport_expmat_check.csv` also matches a MetMiner feature-table import check. The relationship between that table import and the earlier converted-data import remains to be confirmed.
+
+The original peak-extraction settings, MetMiner version and conversion command have not been recovered. The copied [MetMiner modules](reference/MetMiner/) are reference source, not a complete application or a verified copy of the original project run.
 
 ## Step 2 — review and clean the data
 
@@ -69,11 +65,7 @@ Select appropriate databases and document their versions, then annotate and filt
 
 The archive also contains `object_merge.rda` and a `table_merge.xlsx` export. Database identities, versions, and the complete historical annotation decision record still require verification. Multiple candidate names do not establish a unique metabolite identity.
 
-## Step 5 — differential accumulated metabolites
-
-The original archive contains `DAM_analysis.xlsx` and OPLS-DA figures under `Result/DAM/`; their paths match MetMiner's differential analysis outputs. Specify comparison groups and record direction, univariate and multivariate tests, thresholds and multiple-testing adjustment for any new run. Those settings have not been fully recovered for the archived results, so this directory does not claim to rerun or reproduce them.
-
-## Step 6 — extract the archived phenylpropanoid feature list
+## Step 5 — extract the archived phenylpropanoid feature list
 
 [01_extract_phenylpropanoids.py](scripts/01_extract_phenylpropanoids.py) is a new reconstruction of the downstream table extraction; it is not the original selection script. It joins the seven archived IDs to the curated annotations and normalized matrix, checks identifier uniqueness and sample columns, and exports annotated leaf and root tables.
 
@@ -88,6 +80,6 @@ The script writes and **overwrites** [results/feature_audit.csv](results/feature
 
 ## Reproducibility and source
 
-The extraction script has been run against the supplied tables. Full peak detection, MetMiner preprocessing and DAM analysis have not been rerun here. Exact software/database versions, raw MS1 inputs, missingness thresholds, sample exclusions and DAM settings require the original records.
+The extraction script has been run against the supplied tables. Peak extraction and MetMiner preprocessing have not been rerun here. Exact software/database versions, raw MS1 inputs, peak-picking settings, missingness thresholds and sample exclusions require the original records.
 
 The reference modules are copied from [ShawnWx2019/MetMiner](https://github.com/ShawnWx2019/MetMiner) at commit [`6585bbccccd0fa82b18a4ead0086f94cf4fe9d3f`](https://github.com/ShawnWx2019/MetMiner/tree/6585bbccccd0fa82b18a4ead0086f94cf4fe9d3f), copyright 2024 Shawn Wang, under the accompanying MIT license. Cite MetMiner according to its documentation: [doi:10.1111/jipb.13774](https://doi.org/10.1111/jipb.13774).
