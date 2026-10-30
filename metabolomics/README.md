@@ -2,12 +2,12 @@
 
 This directory contains the archived B73/Y12 metabolomics feature tables, selected intermediate R objects, MetMiner reference source modules, and a script to extract the archived phenylpropanoid-related feature list. The archived metadata covers leaf and root samples at the recorded stages.
 
-The repository starts from an **already generated feature table**. Raw MS1 instrument files, the original peak-picking run record, and the complete project-specific processing scripts are not available here.
+The project used **tidyMass for raw metabolomics data conversion**, as confirmed by the project owner. The repository starts from an **already generated feature table**. Raw MS1 instrument files, the original peak-picking run record, and the complete project-specific processing scripts are not available here.
 
 ## Analysis at a glance
 
 ```text
-Feature matrix + sample metadata + available MS/MS
+Raw metabolomics data → tidyMass conversion\n                        │\nFeature matrix + sample metadata + available MS/MS
                         │
               MetMiner table import
                         │
@@ -22,7 +22,7 @@ Feature matrix + sample metadata + available MS/MS
        Archived candidate IDs → phenylpropanoid extraction
 ```
 
-Output names and the stored objects strongly support MetMiner for the archived table-processing stages. Their presence does not establish the exact MetMiner version or prove that upstream peak picking used any particular software.
+Output names and the stored objects strongly support MetMiner for the archived table-processing stages. Their presence does not establish the exact MetMiner version or the original peak-picking parameters.
 
 ## Inputs and archived files
 
@@ -40,11 +40,11 @@ Output names and the stored objects strongly support MetMiner for the archived t
 
 CSV files converted from workbooks retain the values read from the specified sheets, not Excel formatting. The archived MS2 MGF files, other database files, DAM workbooks and figures are not included here. See [WORKFLOW.md](WORKFLOW.md) for source-to-output evidence.
 
-## Step 1 — project setup and feature import
+## Upstream — raw data conversion\n\nThe project owner confirmed that tidyMass was used for raw metabolomics data conversion. The exact conversion tool or command, file formats, tidyMass version, and peak-picking settings have not been independently recovered. No raw MS1 instrument files or conversion script are included, so this stage cannot yet be rerun from this repository.\n\n## Step 1 — project setup and feature import
 
 Use the full [MetMiner application](https://github.com/ShawnWx2019/MetMiner) and [official cookbook](https://shawnwx2019.github.io/metminer-cookbook/). Set a working directory, supply the sample metadata and confirm sample IDs, classes, groups, batches and injection order. Import the feature table and compatible MS/MS data if available, then check that identifiers and sample columns agree.
 
-The archived file `3.4.tblImport_expmat_check.csv` matches an output name in MetMiner's [data_import_tbl.R](reference/MetMiner/R/data_import_tbl.R). This supports the table-import stage; it does not prove how the feature table was originally generated. The copied reference modules depend on the full application and are not an independently runnable workflow.
+The archived file `3.4.tblImport_expmat_check.csv` matches an output name in MetMiner's [data_import_tbl.R](reference/MetMiner/R/data_import_tbl.R). This supports the table-import stage; the exact link between the recorded tidyMass conversion and feature-table generation requires the original run record. The copied reference modules depend on the full application and are not an independently runnable workflow.
 
 ## Step 2 — review and clean the data
 
